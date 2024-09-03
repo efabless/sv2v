@@ -58,12 +58,12 @@ jobs:
     steps:
       - run: sudo apt-get install -y tree
       - name: Download Linux Artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Linux
           path: sv2v-Linux
       - name: Download MacOS Artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: macOS
           path: sv2v-macOS
